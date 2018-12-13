@@ -1,0 +1,73 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.categorie{
+    height: 300px;
+    width: 300px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#full{
+    height: 900px;
+    width: 1500px;
+    border-style: groove;
+    border-bottom-width: 8px;
+    display: flex;
+    color:white;
+    font-size: 20px;
+    text-align:start;
+
+}
+#carousel{
+    height: 900px;
+    width: 600px;
+background-color: black;
+    display: inline-block;
+
+}
+#coordonnée{
+
+    height: 300px;
+    width: 600px;
+    background-color: #35bc7A;
+
+}
+h1{
+    padding-left: 5%;
+}
+
+p{
+    padding-left: 4%;
+}
+#grillage{
+    height: 900px;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.orange{
+    background-color: #fea607;
+text-align: center;
+}
+
+.blue{
+    background-color: #3495b7;
+}
+.red{
+
+    background-color: #db5445;
+
+}
+.green{
+    background-color: #35bc7A;
+
+
+}
+.orange2{
+    background-color: #f87628;
+}
