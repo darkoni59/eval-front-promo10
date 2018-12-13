@@ -1,14 +1,12 @@
 
-body{
-    margin: 0;
-    padding: 0;
-}
 .categorie{
     height: 300px;
     width: 300px;
 display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+
 
 }
 #full{
@@ -20,6 +18,7 @@ display: flex;
     color:white;
     font-size: 20px;
     text-align:start;
+
 
 }
 #carousel{
@@ -35,13 +34,10 @@ background-color: black;
     width: 600px;
     background-color: #35bc7A;
 
+
 }
 h1{
-    padding-left: 5%;
-}
 
-p{
-    padding-left: 4%;
 }
 #grillage{
     height: 900px;
@@ -51,13 +47,18 @@ p{
 
 }
 .orange{
-    background-color: #fea607;
+    background-color:#f87628;
 text-align: center;
 }
 
-.blue{
+.blue1{
     background-color: #3495b7;
 }
+.blue2{
+    background-color: #3495b7;
+
+}
+
 .red{
 
     background-color: #db5445;
@@ -68,6 +69,15 @@ text-align: center;
 
 
 }
-.orange2{
+.orange1{
     background-color: #f87628;
+}.orange2{
+     background-color: #fea607;
+ }
+.far,.fas,.fab{
+    font-size:  70px;
+
+
+
+
 }
