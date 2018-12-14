@@ -88,4 +88,3 @@ $('.green').hover(function () {
     });
 
 });
-$('#carousel').
