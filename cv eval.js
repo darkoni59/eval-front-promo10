@@ -1,6 +1,58 @@
 
-var tabi=['imageA','imageB'];
+var carrousel=['image1.jpg','image2.jpg','image3.jpg'];
 var index=0;
+
+
+$('#carousel').css("background-image", "url(" + carrousel[0] + ")");
+
+$('.D').click(function () {
+
+    if (index < carrousel.length-1) {
+
+        index++;
+        $('#carousel').css("background-image", "url(" + carrousel[index] + ")");
+
+    } else {
+        index = 1;
+        $('#carousel').css("background-image", "url(" + carrousel[0] + ")");
+
+    }
+
+});
+
+$('.G').click(function () {
+
+    if (index > 0) {
+
+        index--;
+        $('#carousel').css("background-image", "url(" + carrousel[index] + ")");
+    } else {
+        index = carousel.length - 1;
+        $('#carousel').css("background-image", "url(" + carrousel[1] + ")");
+    }
+    console.log(index);
+});
+
+
+function suivant() {
+
+
+    if (index < carrousel.length-1) {
+
+        index++;
+        $('#carousel').css("background-image", "url(" + carrousel[index] + ")");
+
+    } else {
+        index = 0;
+        $('#carousel').css("background-image", "url(" + carrousel[0] + ")");
+
+    }
+    setTimeout(suivant, 4000);
+}
+
+suivant();
+
+
 
 
 
@@ -20,7 +72,7 @@ $('.blue1').hover(function () {
 $('.blue2').hover(function () {
 
     $(this).show();
-    $(this).html('<h1>contact</h1><p><strong>mail:bryanbultot@gmail.com</strong></p>'+'<p>n°: 03 27 59 96 71</p>');
+    $(this).html('<h1>contact</h1><p><strong>mail:bryanbultot@gmail.com</strong></p>'+'<p>n°: 06 74 43 60 77</p>');
 
 $(this).mouseout(function () {
     $(this).html('<span class="far fa-address-book"></span><h2>contact</h2>')
@@ -86,5 +138,5 @@ $('.green').hover(function () {
 
 
     });
-
 });
+
